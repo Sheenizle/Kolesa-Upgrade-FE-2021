@@ -1,0 +1,83 @@
+@import './colors.scss';
+
+.header {
+    display: flex;
+    flex-basis: 100%;
+    grid-area: header;
+    height: 104px;
+    background-color: #fff;
+    position: relative;
+
+    &__logo {
+        display: flex;
+        width: 215px;
+        height: 35px;
+        margin: 38px 66px 30px 32px;
+    }
+
+    &__input[type=text] {
+        display: flex;
+        width: 308px;
+        height: 44px;
+        margin-top: 34px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        background-color: #f2f2f3;
+        background-image: url(/src/assets/search.png);
+        background-position: 15px 16px;
+        background-repeat: no-repeat;
+        padding: 8px 198px 8px 40px;
+    }
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: white;
+        width: 180px;
+        height: 70px;
+        cursor: pointer;
+    }
+
+    &__user img {
+        display: flex;
+        border-radius: 100px;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+    }
+
+    &__avatar-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__login {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $main-color;
+        margin-bottom: 0;
+        padding-left: 16px;
+    }
+
+    &__score {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: #1c1819;
+        margin-top: 0;
+    }
+}

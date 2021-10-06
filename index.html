@@ -1,13 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/scss/index.scss">
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolesa</title>
+</head>
+
+<body>
     <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <div class="body__main">
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="/src/assets/logo.png" alt="main_logo">
+            </a>
+            <input class='header__input' type="text" placeholder="Поиск">
+            <div class="header__avatar">
+                <button class="header__user" type="button">
+                    <img src="/src/assets/Avatar.png" alt="avatar">
+                    <div class="header__avatar-text">
+                        <p class="header__login">Мортиджан</p>
+                        <p class="header__score">300 баллов</p>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <nav class="admin__nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Оргсхема</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Kolesa Team</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Kolesa Shop</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Картина компании</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Новости</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Education</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Guidelines</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Библиотека</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">FAQ</a>
+                </li>
+            </ul>
+          </nav>
+          <main class="mainpage">
+              <img class='mainpage__promo' src="/src/assets/Rectangle 54.png" alt="promo">
+              <div class="mainpage__bonusbtn">
+                <button class="mainpage__bonusbtn-getbonus" type="button">Получить баллы</button>
+                <button class="mainpage__bonusbtn-howbonus" type="button">Как получить баллы</button>
+                <button class="mainpage__bonusbtn-givebonus" type="button">Подарить баллы</button>
+            </div>
+            <form class='mainpage__filter'>
+                <input type="radio" name="filter" id="1" value="Все товары">
+                <label for="1">Все товары</label>
+                <input type="radio" name="filter" id="2" value="Одежда">
+                <label for="2">Одежда</label>
+                <input type="radio" name="filter" id="3" value="Аксессуары">
+                <label for="3">Аксессуары</label>
+            </form>
+            <div class="catalog">
+                <div class="catalog__card">
+                    <div class="catalog__card-image">
+                        <img
+                        class="catalog__card-image-goods"
+                        src="/src/assets/image 4.png"
+                        alt="tshirt"
+                        width="330"
+                        height="330"
+                        >
+                        <span class="catalog__card-badge">NEW</span>
+                    </div>
+                    <div class="catalog__card-description">
+                        <div class="catalog__card-price">
+                            220 баллов
+                        </div>
+                        <h3 class="catalog__card-title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+                        <div class="catalog__card-hint">
+                            Размеры S/M/L
+                        </div>
+                        <div class="catalog__card-bottom">
+                            <button class="catalog__card-button-btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <div class="catalog__card-image">
+                        <img
+                        class="catalog__card-image-goods"
+                        src="/src/assets/image 4.png"
+                        alt="tshirt"
+                        width="330"
+                        height="330"
+                        >
+                        <span class="catalog__card-badge">NEW</span>
+                    </div>
+                    <div class="catalog__card-description">
+                        <div class="catalog__card-price">
+                            220 баллов
+                        </div>
+                        <h3 class="catalog__card-title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+                        <div class="catalog__card-hint">
+                            Размеры S/M/L
+                        </div>
+                        <div class="catalog__card-bottom">
+                            <button class="catalog__card-button-btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <div class="catalog__card-image">
+                        <img
+                        class="catalog__card-image-goods"
+                        src="/src/assets/image 4.png"
+                        alt="tshirt"
+                        width="330"
+                        height="330"
+                        >
+                    </div>
+                    <div class="catalog__card-description">
+                        <div class="catalog__card-price">
+                            220 баллов
+                        </div>
+                        <h3 class="catalog__card-title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+                        <div class="catalog__card-hint">
+                            Размеры S/M/L
+                        </div>
+                        <div class="catalog__card-bottom">
+                            <button class="catalog__card-button-btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <div class="catalog__card-image">
+                        <img
+                        class="catalog__card-image-goods"
+                        src="/src/assets/image 4.png"
+                        alt="tshirt"
+                        width="330"
+                        height="330"
+                        >
+                    </div>
+                    <div class="catalog__card-description">
+                        <div class="catalog__card-price">
+                            220 баллов
+                        </div>
+                        <h3 class="catalog__card-title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+                        <div class="catalog__card-hint">
+                            Размеры S/M/L
+                        </div>
+                        <div class="catalog__card-bottom">
+                            <button class="catalog__card-button-btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <div class="catalog__card-image">
+                        <img
+                        class="catalog__card-image-goods"
+                        src="/src/assets/image 4.png"
+                        alt="tshirt"
+                        width="330"
+                        height="330"
+                        >
+                    </div>
+                    <div class="catalog__card-description">
+                        <div class="catalog__card-price">
+                            220 баллов
+                        </div>
+                        <h3 class="catalog__card-title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+                        <div class="catalog__card-hint">
+                            Размеры S/M/L
+                        </div>
+                        <div class="catalog__card-bottom">
+                            <button class="catalog__card-button-btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__card">
+                    <div class="catalog__card-image">
+                        <img
+                        class="catalog__card-image-goods"
+                        src="/src/assets/image 4.png"
+                        alt="tshirt"
+                        width="330"
+                        height="330"
+                        >
+                    </div>
+                    <div class="catalog__card-description">
+                        <div class="catalog__card-price">
+                            220 баллов
+                        </div>
+                        <h3 class="catalog__card-title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+                        <div class="catalog__card-hint">
+                            Размеры S/M/L
+                        </div>
+                        <div class="catalog__card-bottom">
+                            <button class="catalog__card-button-btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </main>
+            <footer class="footer1">
+                <div class="footer1__company">
+                    <p class='footer1__textcompany'>© Kolesa Group</p>
+                    <div class="footer1__social__icon">
+                        <a href="#">
+                            <img class='footer1__social' src="/src/assets/insta.svg" alt="instagram">
+                        </a>
+                            <a href="#">
+                            <img class='footer1__social' src="/src/assets/ytube.svg" alt="ytube">
+                        </a>
+                        <img class='footer1__social' src="/src/assets/vk.svg" alt="vk">
+                    </div>
+                </div>
+            </footer>
+            <footer class="footer2">
+                <a href="#" class="footer2__question">Есть идеи что улучшить? Не знаешь, с кем решить проблему?</a>
+                <button class="footer2__write">Написать</button>
+            </footer>
+    </div>
+    <div class='body__overlay'></div>
+</body>
 </html>

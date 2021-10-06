@@ -1,0 +1,27 @@
+@import './colors.scss';
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.body__main {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 104px 1fr 98px;
+    grid-template-columns: 313px 1fr;
+    grid-template-areas: 'header header' 'nav    main' 'footer footer';
+    width: 1368px;
+    padding: 0;
+    margin: auto;
+}
+
+.body__overlay {
+    background-color: #1c1819;
+    height: 98px;
+    width: 100%;
+    margin-top: -98px;
+}

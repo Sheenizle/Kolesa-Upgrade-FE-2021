@@ -1,0 +1,57 @@
+@import './colors.scss';
+
+.footer1 {
+    background-color: $bg-color;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 32px;
+
+    &__company {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__social__icon {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__social {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.footer2 {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__question {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        width: 317px;
+        height: 48px;
+    }
+
+    &__write {
+        text-align: center;
+        width: 150px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $main-color;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        margin-right: 39px;
+        padding: 8px;
+    }
+}
